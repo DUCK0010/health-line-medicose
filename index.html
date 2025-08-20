@@ -1,150 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Health Line Medicose</title>
-  <meta name="description" content="Health Line Medicose - Genuine medicines, quick home delivery & trusted service."/>
   <style>
-    :root{--green:#10b981;--dark:#0b1720;--muted:#55606a;background:#fff}
-    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--dark);background:#f7fbf8}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1000px;margin:24px auto;padding:20px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:56px;height:56px;border-radius:10px;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:800;font-size:20px}
-    nav a.btn{padding:10px 14px;border-radius:12px;background:#fff;border:1px solid #e6efe9;font-weight:700}
-    nav a.primary{background:var(--green);color:#fff;border-color:var(--green)}
-    .hero{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:center;margin-top:10px}
-    .hero-left h1{font-size:28px;margin:0 0 8px}
-    .lead{color:var(--muted);margin:0 0 16px}
-    .card{background:#fff;border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(6,20,15,.04);border:1px solid #eef6ef}
-    form input,form textarea,select{width:100%;padding:10px;border-radius:10px;border:1px solid #e6efe9;margin-bottom:10px;font:inherit}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
-    .product{padding:12px;border-radius:12px;background:#fff;border:1px solid #eef6ef;text-align:center}
-    table{width:100%;border-collapse:collapse;margin-top:12px;background:#fff;border-radius:8px;overflow:hidden}
-    th,td{padding:10px;border-bottom:1px solid #f1f5f3;text-align:left}
-    footer{margin-top:22px;padding:18px 0;text-align:center;color:var(--muted)}
-    .actions{display:flex;gap:10px;flex-wrap:wrap}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}}
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4fef4; color: #222; }
+    header { background: #1b8f2a; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 10px; color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; text-align: center; max-width: 800px; margin: auto; }
+    .btn { display: inline-block; margin: 10px; padding: 12px 20px; border-radius: 8px;
+           background: #1b8f2a; color: white; text-decoration: none; font-weight: bold; }
+    .btn:hover { background: #166d21; transition: 0.3s; }
+    footer { background: #1b8f2a; color: white; text-align: center; padding: 15px; }
+    /* Small screen tweaks */
+    @media (max-width: 480px) {
+      header { padding: 16px; }
+      section { padding: 28px 12px; }
+      .btn { padding: 10px 16px; margin: 8px; }
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">H</div>
-        <div>
-          <div style="font-weight:800">Health Line Medicose</div>
-          <div style="font-size:13px;color:var(--muted)">Your trusted medical partner</div>
-        </div>
-      </div>
-      <nav style="display:flex;gap:10px;align-items:center">
-        <a class="btn" href="#products">Products</a>
-        <a class="btn" href="#contact">Contact</a>
-        <a class="btn primary" href="https://wa.me/918755971064?text=Hi%20Health%20Line%20Medicose%2C%20I%20want%20to%20order." target="_blank">Order on WhatsApp</a>
-      </nav>
-    </header>
+  <header>
+    <h1>Health Line Medicose</h1>
+    <p>Your trusted medical store</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-      <div class="hero-left">
-        <div class="card">
-          <h1>Fast delivery • Genuine medicines</h1>
-          <p class="lead">Health Line Medicose offers prescription and OTC medicines, health supplies and quick home delivery. Contact us directly on WhatsApp to place orders.</p>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn primary" href="https://wa.me/918755971064?text=Hi%2C%20I%20want%20to%20order." target="_blank">Order on WhatsApp</a>
-            <a class="btn" href="tel:+918755971064">📞 Call +91 87559 71064</a>
-          </div>
-        </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide genuine medicines, health products, and personal care items at affordable prices.</p>
+  </section>
 
-        <div id="products" style="margin-top:16px">
-          <h3 style="margin:6px 0">Popular Products</h3>
-          <div class="grid-3">
-            <div class="product card"><strong>Paracetamol 650 mg</strong><div style="margin-top:8px;color:var(--muted)">15 tabs • MRP ₹xx</div></div>
-            <div class="product card"><strong>Vitamin C 500 mg</strong><div style="margin-top:8px;color:var(--muted)">60 tabs • MRP ₹xx</div></div>
-            <div class="product card"><strong>ORS Sachet</strong><div style="margin-top:8px;color:var(--muted)">1 sachet • MRP ₹xx</div></div>
-          </div>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>✔ All types of medicines<br>✔ Home delivery<br>✔ Health &amp; wellness products</p>
+  </section>
 
-          <div class="card" style="margin-top:12px">
-            <h4 style="margin:6px 0">Price List (sample)</h4>
-            <table>
-              <thead><tr><th>Item</th><th>Pack</th><th>MRP</th></tr></thead>
-              <tbody>
-                <tr><td>Paracetamol 650 mg</td><td>15 tabs</td><td>₹ xx</td></tr>
-                <tr><td>Vitamin C Chewable</td><td>60 tabs</td><td>₹ xx</td></tr>
-                <tr><td>ORS Powder</td><td>1 sachet</td><td>₹ xx</td></tr>
-              </tbody>
-            </table>
-            <div style="font-size:12px;color:var(--muted);margin-top:8px">Prices indicative — final bill as per store MRP / offers.</div>
-          </div>
-        </div>
-      </div>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <a class="btn" href="tel:+918755971064">📞 Call Now</a>
+    <a class="btn" href="https://wa.me/918755971064" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a class="btn" href="https://maps.app.goo.gl/R812QGRKsLDZT4gYA" target="_blank" rel="noopener">📍 Find Us</a>
+    <p>Address: Wild Life Road, Chandrabani Choila</p>
+  </section>
 
-      <aside>
-        <div class="card">
-          <h3 style="margin:4px 0">Quick Order</h3>
-          <p style="margin:6px 0 12px;color:var(--muted)">Fill details and we will confirm stock & price on WhatsApp.</p>
-          <form id="orderForm" onsubmit="return sendWhatsApp(event)">
-            <input name="name" placeholder="Your name" required />
-            <input name="phone" placeholder="Phone (with country code e.g. +91...)" required />
-            <input name="items" placeholder="Medicines & qty (e.g. Paracetamol 15 tabs)" required />
-            <select name="delivery">
-              <option value="home">Home Delivery</option>
-              <option value="pickup">Store Pickup</option>
-            </select>
-            <button type="submit" style="width:100%;padding:10px;border-radius:10px;border:0;background:var(--green);color:#fff;font-weight:800">Send to WhatsApp</button>
-            <div style="font-size:12px;color:var(--muted);margin-top:8px">Prescription drugs only after valid prescription.</div>
-          </form>
-        </div>
-
-        <div class="card" style="margin-top:12px">
-          <h4 style="margin:6px 0">Store Info</h4>
-          <div style="font-size:14px">📞 <a href="tel:+918755971064">+91 87559 71064</a></div>
-          <div style="font-size:14px;margin-top:6px">🏠 Address: wild life road chandrabani choila opposite blackout cafe</div>
-          <div style="font-size:13px;color:var(--muted);margin-top:8px">Hours: Mon–Sun 9:00 AM – 10:00 PM</div>
-        </div>
-      </aside>
-    </section>
-
-    <section id="contact" style="margin-top:18px">
-      <h3 style="margin:6px 0">Contact & Map</h3>
-      <div class="card">
-        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
-          <div style="flex:1;min-width:260px">
-            <p style="margin:0 0 8px;color:var(--muted)">Message us on WhatsApp or call for quick orders and enquiries.</p>
-            <div class="actions"><a class="btn primary" href="https://wa.me/918755971064" target="_blank">WhatsApp</a><a class="btn" href="tel:+918755971064">Call</a></div>
-          </div>
-          <div style="flex:1;min-width:260px">
-            <!-- map embed (replace src with your Google Maps embed if you have) -->
-            <iframe title="map" src="https://www.google.com/maps?q=Your+Shop+Address&output=embed" style="width:100%;height:180px;border:0;border-radius:10px"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:10px">
-        <div>© <span id="yr"></span> Health Line Medicose</div>
-        <div style="color:var(--muted)">Made with ❤️ • HEALTH LINE MEDICOSE since 2010</div>
-      </div>
-    </footer>
-  </div>
-
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  function sendWhatsApp(e){
-    e.preventDefault();
-    const f = e.target;
-    const name = encodeURIComponent(f.name.value.trim());
-    const phone = encodeURIComponent(f.phone.value.trim());
-    const items = encodeURIComponent(f.items.value.trim());
-    const delivery = encodeURIComponent(f.delivery.value);
-    const msg = Hi, this is ${name} (${phone}). Delivery: ${delivery}. Order: ${items};
-    const url = https://wa.me/918755971064?text=${msg};
-    window.open(url, '_blank');
-    return false;
-  }
-</script>
+  <footer>
+    <p>© 2025 Health Line Medicose</p>
+  </footer>
 </body>
 </html>
