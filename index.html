@@ -128,23 +128,101 @@
         <div style="color:var(--muted)">Made with ❤️ • Green & White</div>
       </div>
     </footer>
-  </div>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Line Medicose</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    header span {
+      font-size: 30px;
+      margin-right: 8px;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: #e8f5e9;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #2e7d32;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .buttons a {
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .call {
+      background: #43a047;
+      color: white;
+    }
+    .call:hover {
+      background: #2e7d32;
+    }
+    .whatsapp {
+      background: #25d366;
+      color: white;
+    }
+    .whatsapp:hover {
+      background: #1da851;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #f8f8f8;
+      color: #333;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
 
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
+  <header>
+    <span>🏥</span> Health Line Medicose
+  </header>
 
-  function sendWhatsApp(e){
-    e.preventDefault();
-    const f = e.target;
-    const name = encodeURIComponent(f.name.value.trim());
-    const phone = encodeURIComponent(f.phone.value.trim());
-    const items = encodeURIComponent(f.items.value.trim());
-    const delivery = encodeURIComponent(f.delivery.value);
-    const msg = Hi, this is ${name} (${phone}). Delivery: ${delivery}. Order: ${items};
-    const url = https://wa.me/918755971064?text=${msg};
-    window.open(url, '_blank');
-    return false;
-  }
-</script>
+  <section class="hero">
+    <h1>Welcome to Health Line Medicose</h1>
+    <p>Your trusted partner for all medical needs</p>
+    <div class="buttons">
+      <a href="tel:+918755971064" class="call">📞 Call Us</a>
+      <a href="https://wa.me/918755971064" class="whatsapp">💬 WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Health Line Medicose | Made with ❤️</p>
+  </footer>
+
 </body>
 </html>
